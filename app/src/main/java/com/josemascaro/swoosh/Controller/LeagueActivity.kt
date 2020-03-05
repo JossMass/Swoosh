@@ -21,21 +21,34 @@ class LeagueActivity : BaseActivity() {
         womensLeagueBtn.isChecked = false
         coedLeagueBtn.isChecked = false
 
-        selectedLeague = "mens"
+        if(selectedLeague == "mens"){
+            selectedLeague = ""
+        }else{
+            selectedLeague = "mens"
+        }
+
     }
 
     fun onWomensClicked(view: View){
         mensLeagueBtn.isChecked = false
         coedLeagueBtn.isChecked = false
 
-        selectedLeague = "womens"
+        if(selectedLeague == "womens"){
+            selectedLeague = ""
+        }else{
+            selectedLeague = "womens"
+        }
     }
 
     fun onCoedClicked(view: View){
         mensLeagueBtn.isChecked = false
         womensLeagueBtn.isChecked =false
 
-        selectedLeague = "co-ed"
+        if(selectedLeague == "co-ed"){
+            selectedLeague = ""
+        }else{
+            selectedLeague = "co-ed"
+        }
     }
 
     fun leagueNextClicked(view: View){
