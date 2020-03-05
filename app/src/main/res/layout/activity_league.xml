@@ -61,11 +61,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/mensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onMensClicked"
             android:text="@string/togglebutton"
             android:textColor="@color/colorAccent"
             android:textOff="@string/mens"
@@ -73,13 +74,14 @@
             tools:text="@string/mens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onWomensClicked"
             android:text="@string/togglebutton"
             android:textColor="@color/colorAccent"
             android:textOff="@string/womens"
@@ -87,11 +89,12 @@
             tools:text="Womens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/coedLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onCoedClicked"
             android:text="@string/togglebutton"
             android:textColor="@color/colorAccent"
             android:textOff="@string/co_ed"
@@ -100,14 +103,15 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/leagueNextBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="leagueNextClicked"
         android:text="@string/next"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
